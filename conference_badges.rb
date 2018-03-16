@@ -11,5 +11,7 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(attendees)
-  attendees.each_with_index
+  people = []
+  attendees.each_with_index{ |number, name| people << " Hello, #{{name}} you are in room #{number}"}
+  people
 end
