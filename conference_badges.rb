@@ -2,5 +2,5 @@
 #badge maker
 def batch_badge_creator(names)
   badges = []
-  names.each{|name| badges << puts "Hello, my name is #{name}."}
+  names.each{|name| badges << "Hello, my name is #{name}."}
 end
