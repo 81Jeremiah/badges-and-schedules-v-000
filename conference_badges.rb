@@ -12,10 +12,11 @@ end
 
 def assign_rooms(attendees)
   people = []
-  attendees.each_with_index{ |name, number| people << "Hello, #{name}! You'll be assigned to room #{number + 1}!"}
+  attendees.each_with_index{|name, number| people << "Hello, #{name}! You'll be assigned to room #{number + 1}!"}
   people
 end
 
 def printer
-  batch_badge_creator.each{ |badge| puts badge}
+  batch_badge_creator(names).each{|badge| puts badge}
+  assign_rooms(attendees).each{|attendee| puts attendee}
 end
